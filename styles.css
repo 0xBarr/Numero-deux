@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+    font-family: 'Red Hat Display', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+@media only screen and (min-width: 400px) {
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-position-y: -125px;
+    }
+}
+.card{
+    background-color: white;
+    width: 330px;
+    height: 520px;
+    border-radius: 20px;
+    margin-top: 55px;
+    margin-bottom: 65px;
+    text-align: center;
+    box-shadow: 0 1px 30px #adc5f5;
+}
+.hero{
+    width: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+h2{
+    margin-top: 25px;
+    line-height: 1em;
+    color: #171d41;
+    font-weight: 900;
+}
+.description{
+    width: 260px;
+    margin: 0 auto;
+    color: hsl(225, 6%, 51%);
+    line-height: 1.4em;
+    font-size: 80%;
+
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    margin: 15px auto;
+    padding: 5px;
+    background-color: hsl(220, 100%, 99%);
+    border-radius: 5px;
+}
+.music{
+    transform: scale(0.8,0.8);
+    position: relative;
+    right: 9px;
+}
+.plan{
+    width: 120px;
+    line-height: 0.5em;
+    text-align: left;
+    font-size: 90%;
+}
+.annual{
+    font-weight: 900;
+}
+.ash{
+    color: hsl(225, 6%, 51%);
+}
+.change{
+    font-size: 70%;
+    font-weight: 700;
+    position: relative;
+    left: 20px;
+}
+.change:hover{
+    text-decoration: none;
+    color: mediumslateblue;
+    cursor: pointer;
+}
+.payment{
+    width: 265px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(249, 80%, 50%);
+    font-weight: 900;
+    color: white;
+    font-size: 70%;
+}
+.payment:hover{
+    background-color: mediumslateblue;
+    cursor: pointer;
+}
+.cancel{
+    width: 265px;
+    height: 35px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: white;
+    font-weight: 900;
+    color: hsl(225, 6%, 51%);
+    font-size: 70%;
+}
+.cancel:hover{
+    color: hsl(223, 6%, 23%);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(152, 78%, 55%); }
